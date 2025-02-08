@@ -1,0 +1,1879 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FoodMart Grocery Store</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Link Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="/projectWeb3/CSS/style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img
+            src="https://d280crdu6dot2n.cloudfront.net/website_assets/skyfarmfoodmart/skyFarmFoodMartLogo1.jpg"
+            style="width: 200px; height: 60px"
+            alt="FoodMart Logo"
+            class="img-fluid"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="containner p-1"
+          style="border-radius: 10px; color: #797979ac"
+        >
+          <form class="d-flex" role="search">
+            <select class="form-control bg-light border-0" name="" id="">
+              <option value="">All Categories</option>
+              <option value="">Category 1</option>
+              <option value="">Category 2</option>
+              <option value="">Category 3</option>
+            </select>
+            <input
+              class="form-control me-2 border-0"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg bg-light py-3">
+      <div class="container">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Shop by Departments</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">Women</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Men</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Kids</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Accessories</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Beanner -->
+    <div class="container my-5">
+      <div class="row align-items-center promo-section">
+        <!-- Left Content -->
+        <div class="col-md-6 text-center text-md-start">
+          <span class="text-highlight">100% Natural</span>
+          <h1>Fresh Smoothie & Summer Juice</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dignissim
+            massa diam elementum.
+          </p>
+          <a href="#" class="btn btn-outline-dark">Shop Now</a>
+        </div>
+        <!-- Right Image -->
+        <div class="col-md-6 text-center">
+          <img
+            src="/projectWeb3/imge/drink.png"
+            alt="Smoothie"
+            class="smoothie-image"
+          />
+        </div>
+      </div>
+      <!-- Offer Cards -->
+      <div class="row mt-4 g-4">
+        <!-- Fruits & Vegetables -->
+        <div class="col-md-6">
+          <div
+            class="offer-card bg-success-subtle text-dark d-flex justify-content-between align-items-center"
+          >
+            <div>
+              <h5 class="fw-bold">20% Off</h5>
+              <p class="mb-1">Fruits & Vegetables</p>
+              <a href="#" class="text-dark fw-bold">Shop Collection →</a>
+            </div>
+            <div class="offer-image">
+              <img
+                src="/projectWeb3/imge/drink2.png"
+                alt="Fruits & Vegetables"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- Baked Products -->
+        <div class="col-md-6">
+          <div
+            class="offer-card bg-danger-subtle text-dark d-flex justify-content-between align-items-center"
+          >
+            <div>
+              <h5 class="fw-bold">15% Off</h5>
+              <p class="mb-1">Baked Products</p>
+              <a href="#" class="text-dark fw-bold">Shop Collection →</a>
+            </div>
+            <div class="offer-image">
+              <img
+                src="/projectWeb3/imge/drink2.png"
+                alt="Baked Products"
+                id="drink3"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- View All Categories -->
+      <div class="text_sixe">
+        <h4>Category</h4>
+        <div class="link_sixe">
+          <a href=""
+            >View All Categories → <i class="fa-solid fa-chevron-left"></i>
+            <i class="fa-solid fa-chevron-right"></i
+          ></a>
+        </div>
+      </div>
+    </div>
+    <div class="category">
+      <div class="box">
+        <div class="card">
+          <img src="/projectWeb3/imge/drink5.png" alt="" />
+        </div>
+        <div class="text">
+          <div>Fruits & Veges</div>
+        </div>
+      </div>
+      <div class="box">
+        <div class="card">
+          <img src="/projectWeb3/imge/drink6.png" alt="" />
+        </div>
+        <div class="text">
+          <div>Breads & Sweets</div>
+        </div>
+      </div>
+      <div class="box">
+        <div class="card">
+          <img src="/projectWeb3/imge/drink11.png" alt="" />
+        </div>
+        <div class="text">
+          <div>Beverages</div>
+        </div>
+      </div>
+      <div class="box">
+        <div class="card">
+          <img src="/projectWeb3/imge/drink10.png" alt="" />
+        </div>
+        <div class="text">
+          <div>Meat Products</div>
+        </div>
+      </div>
+    </div>
+    <!-- View All Categorie_tow -->
+    <div class="row">
+      <div class="col-12" style="align-items: end">
+        <div class="text mt-5">
+          <a href="#" class="text-dark fw-bold" id="V-left"
+            >View All Categories →</a
+          >
+        </div>
+      </div>
+    </div>
+    <div class="category_tow">
+      <div class="box_tow">
+        <div class="card_tow">
+          <img src="/projectWeb3/imge/drink14.jpg" alt="" />
+        </div>
+        <div class="text_tow">
+          <h6>Amber Jar</h6>
+          <span>Honey best nectar you <br />wish to get</span>
+        </div>
+      </div>
+      <div class="box_tow">
+        <div class="card_tow">
+          <img src="/projectWeb3/imge/drink16.jpg" alt="" />
+        </div>
+        <div class="text_tow">
+          <h6>Amber Jar</h6>
+          <span>Honey best nectar you <br />wish to get</span>
+        </div>
+      </div>
+      <div class="box_tow">
+        <div class="card_tow">
+          <img src="/projectWeb3/imge/drink17.jpg" alt="" />
+        </div>
+        <div class="text_tow">
+          <h6>Amber Jar</h6>
+          <span>Honey best nectar you <br />wish to get</span>
+        </div>
+      </div>
+    </div>
+    <!--Trending Products -->
+    <div class="text_three">
+      <h4>Trending Products</h4>
+      <div class="link_three">
+        <a href="">All</a>
+        <a href="">FRUITS & VEGES</a>
+        <a href=""> JUICES</a>
+        <hr />
+      </div>
+    </div>
+    <!--category_four-->
+    <div class="category_four">
+      <!--box_four-->
+      <div class="box_four">
+        <div class="card_four">
+          <div>
+            <i class="fa-regular fa-heart"></i>
+          </div>
+          <div class="imges_four">
+            <img src="/projectWeb3/imge/TProcdct/banana.png" alt="" />
+          </div>
+        </div>
+        <div class="text_four">
+          <div class="txt1">Banana Fresh</div>
+          <div class="txt2">
+            1 UNIT<i
+              class="fa-solid fa-star"
+              style="border: none; color: rgb(248, 194, 31)"
+            ></i
+            >4.5
+          </div>
+          <div class="txt3">$18.00</div>
+          <div class="txt4">
+            <i class="fa-solid fa-minus"></i> 1
+            <i class="fa-solid fa-plus"></i>Add to Card<i
+              class="fa-solid fa-cart-plus"
+              style="border: none; color: rgb(248, 194, 31)"
+            ></i>
+          </div>
+        </div>
+      </div>
+      <!--close_four-->
+      <!--box_four-->
+      <div class="box_four">
+        <div class="card_four">
+          <div>
+            <i class="fa-regular fa-heart"></i>
+          </div>
+          <div class="imges_four">
+            <img src="/projectWeb3/imge/TProcdct/Fruits1.png" alt="" />
+          </div>
+        </div>
+        <div class="text_four">
+          <div class="txt1">Orange Fresh</div>
+          <div class="txt2">
+            1 UNIT<i
+              class="fa-solid fa-star"
+              style="border: none; color: rgb(248, 194, 31)"
+            ></i
+            >4.5
+          </div>
+          <div class="txt3">$18.00</div>
+          <div class="txt4">
+            <i class="fa-solid fa-minus"></i> 1
+            <i class="fa-solid fa-plus"></i>Add to Card<i
+              class="fa-solid fa-cart-plus"
+              style="border: none; color: rgb(248, 194, 31)"
+            ></i>
+          </div>
+        </div>
+      </div>
+      <!--close_four-->
+      <!--box_four-->
+      <div class="box_four">
+        <div class="card_four">
+          <div>
+            <i class="fa-regular fa-heart"></i>
+          </div>
+          <div class="imges_four">
+            <img src="/projectWeb3/imge/TProcdct//Fruits2.png" alt="" />
+          </div>
+        </div>
+        <div class="text_four">
+          <div class="txt1">Strawberry Fresh</div>
+          <div class="txt2">
+            1 UNIT<i
+              class="fa-solid fa-star"
+              style="border: none; color: rgb(248, 194, 31)"
+            ></i
+            >4.5
+          </div>
+          <div class="txt3">$18.00</div>
+          <div class="txt4">
+            <i class="fa-solid fa-minus"></i> 1
+            <i class="fa-solid fa-plus"></i>Add to Card<i
+              class="fa-solid fa-cart-plus"
+              style="border: none; color: rgb(248, 194, 31)"
+            ></i>
+          </div>
+        </div>
+      </div>
+      <!--close_four-->
+      <!--box_four-->
+      <div class="box_four">
+        <div class="card_four">
+          <div>
+            <i class="fa-regular fa-heart"></i>
+          </div>
+          <div class="imges_four">
+            <img src="/projectWeb3/imge/TProcdct/Fruits3.png" alt="" />
+          </div>
+        </div>
+        <div class="text_four">
+          <div class="txt1">Pineapple Fresh</div>
+          <div class="txt2">
+            1 UNIT<i
+              class="fa-solid fa-star"
+              style="border: none; color: rgb(248, 194, 31)"
+            ></i
+            >4.5
+          </div>
+          <div class="txt3">$18.00</div>
+          <div class="txt4">
+            <i class="fa-solid fa-minus"></i> 1
+            <i class="fa-solid fa-plus"></i>Add to Card<i
+              class="fa-solid fa-cart-plus"
+              style="border: none; color: rgb(248, 194, 31)"
+            ></i>
+          </div>
+        </div>
+      </div>
+      <!--close_four-->
+      <!--box_four-->
+      <div class="box_four">
+        <div class="card_four">
+          <div>
+            <i class="fa-regular fa-heart"></i>
+          </div>
+          <div class="imges_four">
+            <img src="/projectWeb3/imge/TProcdct/Fruits4.png" alt="" />
+          </div>
+        </div>
+        <div class="text_four">
+          <div class="txt1">Apple Fresh</div>
+          <div class="txt2">
+            1 UNIT<i
+              class="fa-solid fa-star"
+              style="border: none; color: rgb(248, 194, 31)"
+            ></i
+            >4.5
+          </div>
+          <div class="txt3">$18.00</div>
+          <div class="txt4">
+            <i class="fa-solid fa-minus"></i> 1
+            <i class="fa-solid fa-plus"></i>Add to Card<i
+              class="fa-solid fa-cart-plus"
+              style="border: none; color: rgb(248, 194, 31)"
+            ></i>
+          </div>
+        </div>
+      </div>
+      <!--close_four-->
+    </div>
+    <!--close_close_four-->
+    <!--category_four-->
+    <div class="category_four">
+      <!--box_four-->
+      <div class="box_four">
+        <div class="card_four">
+          <div>
+            <i class="fa-regular fa-heart"></i>
+          </div>
+          <div class="imges_four">
+            <img src="/projectWeb3/imge/TProcdct/Fruits6.png" alt="" />
+          </div>
+        </div>
+        <div class="text_four">
+          <div class="txt1">Grapes Fresh</div>
+          <div class="txt2">
+            1 UNIT<i
+              class="fa-solid fa-star"
+              style="border: none; color: rgb(248, 194, 31)"
+            ></i
+            >4.5
+          </div>
+          <div class="txt3">$18.00</div>
+          <div class="txt4">
+            <i class="fa-solid fa-minus"></i> 1
+            <i class="fa-solid fa-plus"></i>Add to Card<i
+              class="fa-solid fa-cart-plus"
+              style="border: none; color: rgb(248, 194, 31)"
+            ></i>
+          </div>
+        </div>
+      </div>
+      <!--close_four-->
+      <!--box_four-->
+      <div class="box_four">
+        <div class="card_four">
+          <div>
+            <i class="fa-regular fa-heart"></i>
+          </div>
+          <div class="imges_four">
+            <img src="/projectWeb3/imge/TProcdct/Fruits7.png" alt="" />
+          </div>
+        </div>
+        <div class="text_four">
+          <div class="txt1">Pomeg Fresh</div>
+          <div class="txt2">
+            1 UNIT<i
+              class="fa-solid fa-star"
+              style="border: none; color: rgb(248, 194, 31)"
+            ></i
+            >4.5
+          </div>
+          <div class="txt3">$18.00</div>
+          <div class="txt4">
+            <i class="fa-solid fa-minus"></i> 1
+            <i class="fa-solid fa-plus"></i>Add to Card<i
+              class="fa-solid fa-cart-plus"
+              style="border: none; color: rgb(248, 194, 31)"
+            ></i>
+          </div>
+        </div>
+      </div>
+      <!--close_four-->
+      <!--box_four-->
+      <div class="box_four">
+        <div class="card_four">
+          <div>
+            <i class="fa-regular fa-heart"></i>
+          </div>
+          <div class="imges_four">
+            <img src="/projectWeb3/imge/TProcdct/Fruits8.png" alt="" />
+          </div>
+        </div>
+        <div class="text_four">
+          <div class="txt1">Watermelon Fresh</div>
+          <div class="txt2">
+            1 UNIT<i
+              class="fa-solid fa-star"
+              style="border: none; color: rgb(248, 194, 31)"
+            ></i
+            >4.5
+          </div>
+          <div class="txt3">$18.00</div>
+          <div class="txt4">
+            <i class="fa-solid fa-minus"></i> 1
+            <i class="fa-solid fa-plus"></i>Add to Card<i
+              class="fa-solid fa-cart-plus"
+              style="border: none; color: rgb(248, 194, 31)"
+            ></i>
+          </div>
+        </div>
+      </div>
+      <!--close_four-->
+      <!--box_four-->
+      <div class="box_four">
+        <div class="card_four">
+          <div>
+            <i class="fa-regular fa-heart"></i>
+          </div>
+          <div class="imges_four">
+            <img src="/projectWeb3/imge/TProcdct/Fruits10.png" alt="" />
+          </div>
+        </div>
+        <div class="text_four">
+          <div class="txt1">Coconut Fresh</div>
+          <div class="txt2">
+            1 UNIT<i
+              class="fa-solid fa-star"
+              style="border: none; color: rgb(248, 194, 31)"
+            ></i
+            >4.5
+          </div>
+          <div class="txt3">$18.00</div>
+          <div class="txt4">
+            <i class="fa-solid fa-minus"></i> 1
+            <i class="fa-solid fa-plus"></i>Add to Card<i
+              class="fa-solid fa-cart-plus"
+              style="border: none; color: rgb(248, 194, 31)"
+            ></i>
+          </div>
+        </div>
+      </div>
+      <!--close_four-->
+      <!--box_four-->
+      <div class="box_four">
+        <div class="card_four">
+          <div>
+            <i class="fa-regular fa-heart"></i>
+          </div>
+          <div class="imges_four">
+            <img src="/projectWeb3/imge/TProcdct/Fruits11.png" alt="" />
+          </div>
+        </div>
+        <div class="text_four">
+          <div class="txt1">Cucumber Fresh</div>
+          <div class="txt2">
+            1 UNIT<i
+              class="fa-solid fa-star"
+              style="border: none; color: rgb(248, 194, 31)"
+            ></i
+            >4.5
+          </div>
+          <div class="txt3">$18.00</div>
+          <div class="txt4">
+            <i class="fa-solid fa-minus"></i> 1
+            <i class="fa-solid fa-plus"></i>Add to Card<i
+              class="fa-solid fa-cart-plus"
+              style="border: none; color: rgb(248, 194, 31)"
+            ></i>
+          </div>
+        </div>
+      </div>
+      <!--close_four-->
+    </div>
+    <!--close_close_four-->
+    <!--category_four-->
+    <div class="category_four">
+      <!--box_four-->
+      <div class="box_four">
+        <div class="card_four">
+          <div>
+            <i class="fa-regular fa-heart"></i>
+          </div>
+          <div class="imges_four">
+            <img src="/projectWeb3/imge/TProcdct/Fruits12.png" alt="" />
+          </div>
+        </div>
+        <div class="text_four">
+          <div class="txt1">Stomach Fresh</div>
+          <div class="txt2">
+            1 UNIT<i
+              class="fa-solid fa-star"
+              style="border: none; color: rgb(248, 194, 31)"
+            ></i
+            >4.5
+          </div>
+          <div class="txt3">$18.00</div>
+          <div class="txt4">
+            <i class="fa-solid fa-minus"></i> 1
+            <i class="fa-solid fa-plus"></i>Add to Card<i
+              class="fa-solid fa-cart-plus"
+              style="border: none; color: rgb(248, 194, 31)"
+            ></i>
+          </div>
+        </div>
+      </div>
+      <!--close_four-->
+      <!--box_four-->
+      <div class="box_four">
+        <div class="card_four">
+          <div>
+            <i class="fa-regular fa-heart"></i>
+          </div>
+          <div class="imges_four">
+            <img src="/projectWeb3/imge/TProcdct/Fruits13.png" alt="" />
+          </div>
+        </div>
+        <div class="text_four">
+          <div class="txt1">Nrnong Fresh</div>
+          <div class="txt2">
+            1 UNIT<i
+              class="fa-solid fa-star"
+              style="border: none; color: rgb(248, 194, 31)"
+            ></i
+            >4.5
+          </div>
+          <div class="txt3">$18.00</div>
+          <div class="txt4">
+            <i class="fa-solid fa-minus"></i> 1
+            <i class="fa-solid fa-plus"></i>Add to Card<i
+              class="fa-solid fa-cart-plus"
+              style="border: none; color: rgb(248, 194, 31)"
+            ></i>
+          </div>
+        </div>
+      </div>
+      <!--close_four-->
+      <!--box_four-->
+      <div class="box_four">
+        <div class="card_four">
+          <div>
+            <i class="fa-regular fa-heart"></i>
+          </div>
+          <div class="imges_four">
+            <img src="/projectWeb3/imge/TProcdct/Fruits14.png" alt="" />
+          </div>
+        </div>
+        <div class="text_four">
+          <div class="txt1">Pumpkin Fresh</div>
+          <div class="txt2">
+            1 UNIT<i
+              class="fa-solid fa-star"
+              style="border: none; color: rgb(248, 194, 31)"
+            ></i
+            >4.5
+          </div>
+          <div class="txt3">$18.00</div>
+          <div class="txt4">
+            <i class="fa-solid fa-minus"></i> 1
+            <i class="fa-solid fa-plus"></i>Add to Card<i
+              class="fa-solid fa-cart-plus"
+              style="border: none; color: rgb(248, 194, 31)"
+            ></i>
+          </div>
+        </div>
+      </div>
+      <!--close_four-->
+      <!--box_four-->
+      <div class="box_four">
+        <div class="card_four">
+          <div>
+            <i class="fa-regular fa-heart"></i>
+          </div>
+          <div class="imges_four">
+            <img src="/projectWeb3/imge/TProcdct/Fruits16.png" alt="" />
+          </div>
+        </div>
+        <div class="text_four">
+          <div class="txt1">Peppers Fresh</div>
+          <div class="txt2">
+            1 UNIT<i
+              class="fa-solid fa-star"
+              style="border: none; color: rgb(248, 194, 31)"
+            ></i
+            >4.5
+          </div>
+          <div class="txt3">$18.00</div>
+          <div class="txt4">
+            <i class="fa-solid fa-minus"></i> 1
+            <i class="fa-solid fa-plus"></i>Add to Card<i
+              class="fa-solid fa-cart-plus"
+              style="border: none; color: rgb(248, 194, 31)"
+            ></i>
+          </div>
+        </div>
+      </div>
+      <!--close_four-->
+      <!--box_four-->
+      <div class="box_four">
+        <div class="card_four">
+          <div>
+            <i class="fa-regular fa-heart"></i>
+          </div>
+          <div class="imges_four">
+            <img src="/projectWeb3/imge/TProcdct/15.png" alt="" />
+          </div>
+        </div>
+        <div class="text_four">
+          <div class="txt1">Big peppers Fresh</div>
+          <div class="txt2">
+            1 UNIT<i
+              class="fa-solid fa-star"
+              style="border: none; color: rgb(248, 194, 31)"
+            ></i
+            >4.5
+          </div>
+          <div class="txt3">$18.00</div>
+          <div class="txt4">
+            <i class="fa-solid fa-minus"></i> 1
+            <i class="fa-solid fa-plus"></i>Add to Card<i
+              class="fa-solid fa-cart-plus"
+              style="border: none; color: rgb(248, 194, 31)"
+            ></i>
+          </div>
+        </div>
+      </div>
+      <!--close_four-->
+    </div>
+    <!--close_close_four-->
+    <!--category_four-->
+    <div class="category_four">
+      <!--box_four-->
+      <div class="box_four">
+        <div class="card_four">
+          <div>
+            <i class="fa-regular fa-heart"></i>
+          </div>
+          <div class="imges_four">
+            <img src="/projectWeb3/imge/TProcdct/Fruits17.png" alt="" />
+          </div>
+        </div>
+        <div class="text_four">
+          <div class="txt1">Longan Fresh</div>
+          <div class="txt2">
+            1 UNIT<i
+              class="fa-solid fa-star"
+              style="border: none; color: rgb(248, 194, 31)"
+            ></i
+            >4.5
+          </div>
+          <div class="txt3">$18.00</div>
+          <div class="txt4">
+            <i class="fa-solid fa-minus"></i> 1
+            <i class="fa-solid fa-plus"></i>Add to Card<i
+              class="fa-solid fa-cart-plus"
+              style="border: none; color: rgb(248, 194, 31)"
+            ></i>
+          </div>
+        </div>
+      </div>
+      <!--close_four-->
+      <!--box_four-->
+      <div class="box_four">
+        <div class="card_four">
+          <div>
+            <i class="fa-regular fa-heart"></i>
+          </div>
+          <div class="imges_four">
+            <img src="/projectWeb3/imge/TProcdct/Fruits18.png" alt="" />
+          </div>
+        </div>
+        <div class="text_four">
+          <div class="txt1">Duren Fresh</div>
+          <div class="txt2">
+            1 UNIT<i
+              class="fa-solid fa-star"
+              style="border: none; color: rgb(248, 194, 31)"
+            ></i
+            >4.5
+          </div>
+          <div class="txt3">$18.00</div>
+          <div class="txt4">
+            <i class="fa-solid fa-minus"></i> 1
+            <i class="fa-solid fa-plus"></i>Add to Card<i
+              class="fa-solid fa-cart-plus"
+              style="border: none; color: rgb(248, 194, 31)"
+            ></i>
+          </div>
+        </div>
+      </div>
+      <!--close_four-->
+      <!--box_four-->
+      <div class="box_four">
+        <div class="card_four">
+          <div>
+            <i class="fa-regular fa-heart"></i>
+          </div>
+          <div class="imges_four">
+            <img src="/projectWeb3/imge/TProcdct/Fruits19.png" alt="" />
+          </div>
+        </div>
+        <div class="text_four">
+          <div class="txt1">Series Fresh</div>
+          <div class="txt2">
+            1 UNIT<i
+              class="fa-solid fa-star"
+              style="border: none; color: rgb(248, 194, 31)"
+            ></i
+            >4.5
+          </div>
+          <div class="txt3">$18.00</div>
+          <div class="txt4">
+            <i class="fa-solid fa-minus"></i> 1
+            <i class="fa-solid fa-plus"></i>Add to Card<i
+              class="fa-solid fa-cart-plus"
+              style="border: none; color: rgb(248, 194, 31)"
+            ></i>
+          </div>
+        </div>
+      </div>
+      <!--close_four-->
+      <!--box_four-->
+      <div class="box_four">
+        <div class="card_four">
+          <div>
+            <i class="fa-regular fa-heart"></i>
+          </div>
+          <div class="imges_four">
+            <img src="/projectWeb3/imge/TProcdct/Fruits20.png" alt="" />
+          </div>
+        </div>
+        <div class="text_four">
+          <div class="txt1">Grapefruit Fresh</div>
+          <div class="txt2">
+            1 UNIT<i
+              class="fa-solid fa-star"
+              style="border: none; color: rgb(248, 194, 31)"
+            ></i
+            >4.5
+          </div>
+          <div class="txt3">$18.00</div>
+          <div class="txt4">
+            <i class="fa-solid fa-minus"></i> 1
+            <i class="fa-solid fa-plus"></i>Add to Card<i
+              class="fa-solid fa-cart-plus"
+              style="border: none; color: rgb(248, 194, 31)"
+            ></i>
+          </div>
+        </div>
+      </div>
+      <!--close_four-->
+      <!--box_four-->
+      <div class="box_four">
+        <div class="card_four">
+          <div>
+            <i class="fa-regular fa-heart"></i>
+          </div>
+          <div class="imges_four">
+            <img src="/projectWeb3/imge/TProcdct/Fruits21.png" alt="" />
+          </div>
+        </div>
+        <div class="text_four">
+          <div class="txt1">Sao Mao Fresh</div>
+          <div class="txt2">
+            1 UNIT<i
+              class="fa-solid fa-star"
+              style="border: none; color: rgb(248, 194, 31)"
+            ></i
+            >4.5
+          </div>
+          <div class="txt3">$18.00</div>
+          <div class="txt4">
+            <i class="fa-solid fa-minus"></i> 1
+            <i class="fa-solid fa-plus"></i>Add to Card<i
+              class="fa-solid fa-cart-plus"
+              style="border: none; color: rgb(248, 194, 31)"
+            ></i>
+          </div>
+        </div>
+      </div>
+      <!--close_four-->
+    </div>
+    <!--close_close_four-->
+    <!--category_four-->
+    <div class="category_four">
+      <!--box_four-->
+      <div class="box_four">
+        <div class="card_four">
+          <div>
+            <i class="fa-regular fa-heart"></i>
+          </div>
+          <div class="imges_four">
+            <img src="/projectWeb3/imge/TProcdct/Fruits22.png" alt="" />
+          </div>
+        </div>
+        <div class="text_four">
+          <div class="txt1">Draw a lens Fresh</div>
+          <div class="txt2">
+            1 UNIT<i
+              class="fa-solid fa-star"
+              style="border: none; color: rgb(248, 194, 31)"
+            ></i
+            >4.5
+          </div>
+          <div class="txt3">$18.00</div>
+          <div class="txt4">
+            <i class="fa-solid fa-minus"></i> 1
+            <i class="fa-solid fa-plus"></i>Add to Card<i
+              class="fa-solid fa-cart-plus"
+              style="border: none; color: rgb(248, 194, 31)"
+            ></i>
+          </div>
+        </div>
+      </div>
+      <!--close_four-->
+      <!--box_four-->
+      <div class="box_four">
+        <div class="card_four">
+          <div>
+            <i class="fa-regular fa-heart"></i>
+          </div>
+          <div class="imges_four">
+            <img src="/projectWeb3/imge/TProcdct/Fruits23.png" alt="" />
+          </div>
+        </div>
+        <div class="text_four">
+          <div class="txt1">Dragon Fresh</div>
+          <div class="txt2">
+            1 UNIT<i
+              class="fa-solid fa-star"
+              style="border: none; color: rgb(248, 194, 31)"
+            ></i
+            >4.5
+          </div>
+          <div class="txt3">$18.00</div>
+          <div class="txt4">
+            <i class="fa-solid fa-minus"></i> 1
+            <i class="fa-solid fa-plus"></i>Add to Card<i
+              class="fa-solid fa-cart-plus"
+              style="border: none; color: rgb(248, 194, 31)"
+            ></i>
+          </div>
+        </div>
+      </div>
+      <!--close_four-->
+      <!--box_four-->
+      <div class="box_four">
+        <div class="card_four">
+          <div>
+            <i class="fa-regular fa-heart"></i>
+          </div>
+          <div class="imges_four">
+            <img src="/projectWeb3/imge/TProcdct/Fruits24.png" alt="" />
+          </div>
+        </div>
+        <div class="text_four">
+          <div class="txt1">Tep Fresh</div>
+          <div class="txt2">
+            1 UNIT<i
+              class="fa-solid fa-star"
+              style="border: none; color: rgb(248, 194, 31)"
+            ></i
+            >4.5
+          </div>
+          <div class="txt3">$18.00</div>
+          <div class="txt4">
+            <i class="fa-solid fa-minus"></i> 1
+            <i class="fa-solid fa-plus"></i>Add to Card<i
+              class="fa-solid fa-cart-plus"
+              style="border: none; color: rgb(248, 194, 31)"
+            ></i>
+          </div>
+        </div>
+      </div>
+      <!--close_four-->
+      <!--box_four-->
+      <div class="box_four">
+        <div class="card_four">
+          <div>
+            <i class="fa-regular fa-heart"></i>
+          </div>
+          <div class="imges_four">
+            <img src="/projectWeb3/imge/TProcdct/Fruits25.png" alt="" />
+          </div>
+        </div>
+        <div class="text_four">
+          <div class="txt1">Tamarind Fresh</div>
+          <div class="txt2">
+            1 UNIT<i
+              class="fa-solid fa-star"
+              style="border: none; color: rgb(248, 194, 31)"
+            ></i
+            >4.5
+          </div>
+          <div class="txt3">$18.00</div>
+          <div class="txt4">
+            <i class="fa-solid fa-minus"></i> 1
+            <i class="fa-solid fa-plus"></i>Add to Card<i
+              class="fa-solid fa-cart-plus"
+              style="border: none; color: rgb(248, 194, 31)"
+            ></i>
+          </div>
+        </div>
+      </div>
+      <!--close_four-->
+      <!--box_four-->
+      <div class="box_four">
+        <div class="card_four">
+          <div>
+            <i class="fa-regular fa-heart"></i>
+          </div>
+          <div class="imges_four">
+            <img src="/projectWeb3/imge/TProcdct/Fruits26.png" alt="" />
+          </div>
+        </div>
+        <div class="text_four">
+          <div class="txt1">Cane Fresh</div>
+          <div class="txt2">
+            1 UNIT<i
+              class="fa-solid fa-star"
+              style="border: none; color: rgb(248, 194, 31)"
+            ></i
+            >4.5
+          </div>
+          <div class="txt3">$18.00</div>
+          <div class="txt4">
+            <i class="fa-solid fa-minus"></i> 1
+            <i class="fa-solid fa-plus"></i>Add to Card<i
+              class="fa-solid fa-cart-plus"
+              style="border: none; color: rgb(248, 194, 31)"
+            ></i>
+          </div>
+        </div>
+      </div>
+      <!--close_four-->
+    </div>
+    <!--close_close_four-->
+    <!-- Upto 25% off/category_five -->
+    <div class="category_five">
+      <div class="box_five">
+        <div class="text_five">
+          <p id="t-fiveone">Upto 25% Off</p>
+          <p id="t-fivetwo">Luxa Dark Chocolate</p>
+          <p id="t-fivethree">Very tasty & creamy vanilla flavour.</p>
+          <p id="t-fiveonefour">SHOW NOW</p>
+        </div>
+        <div class="card_five">
+          <div class="img_five">
+            <img src="/projectWeb3/imge/TProcdct/upto1.png" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="box_five2">
+        <div class="text_five">
+          <p id="t-fiveone">Upto 25% Off</p>
+          <p id="t-fivetwo">Creamy Muffins</p>
+          <p id="t-fivethree">Very tasty & creamy vanilla flavour.</p>
+          <p id="t-fiveonefour">SHOW NOW</p>
+        </div>
+        <div class="card_five">
+          <div class="img_five">
+            <img src="/projectWeb3/imge/TProcdct/upto2.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Best selling products -->
+    <div class="text_sixe">
+      <h4>Best selling products</h4>
+      <div class="link_sixe">
+        <a href=""
+          >View All Categories → <i class="fa-solid fa-chevron-left"></i>
+          <i class="fa-solid fa-chevron-right"></i
+        ></a>
+      </div>
+    </div>
+    <!--category_four-->
+    <div class="category_four">
+      <!--box_four-->
+      <div class="box_four">
+        <div class="card_four">
+          <div>
+            <i class="fa-regular fa-heart"></i>
+          </div>
+          <div class="imges_four">
+            <img src="/projectWeb3/imge/TProcdct/Fruits27.png" alt="" />
+          </div>
+        </div>
+        <div class="text_four">
+          <div class="txt1">Banana Fresh</div>
+          <div class="txt2">
+            1 UNIT<i
+              class="fa-solid fa-star"
+              style="border: none; color: rgb(248, 194, 31)"
+            ></i
+            >4.5
+          </div>
+          <div class="txt3">$18.00</div>
+          <div class="txt4">
+            <i class="fa-solid fa-minus"></i> 1
+            <i class="fa-solid fa-plus"></i>Add to Card<i
+              class="fa-solid fa-cart-plus"
+              style="border: none; color: rgb(248, 194, 31)"
+            ></i>
+          </div>
+        </div>
+      </div>
+      <!--close_four-->
+      <!--box_four-->
+      <div class="box_four">
+        <div class="card_four">
+          <div>
+            <i class="fa-regular fa-heart"></i>
+          </div>
+          <div class="imges_four">
+            <img src="/projectWeb3/imge/TProcdct/Fruits28.png" alt="" />
+          </div>
+        </div>
+        <div class="text_four">
+          <div class="txt1">Orange Fresh</div>
+          <div class="txt2">
+            1 UNIT<i
+              class="fa-solid fa-star"
+              style="border: none; color: rgb(248, 194, 31)"
+            ></i
+            >4.5
+          </div>
+          <div class="txt3">$18.00</div>
+          <div class="txt4">
+            <i class="fa-solid fa-minus"></i> 1
+            <i class="fa-solid fa-plus"></i>Add to Card<i
+              class="fa-solid fa-cart-plus"
+              style="border: none; color: rgb(248, 194, 31)"
+            ></i>
+          </div>
+        </div>
+      </div>
+      <!--close_four-->
+      <!--box_four-->
+      <div class="box_four">
+        <div class="card_four">
+          <div>
+            <i class="fa-regular fa-heart"></i>
+          </div>
+          <div class="imges_four">
+            <img src="/projectWeb3/imge/TProcdct//Fruits29.png" alt="" />
+          </div>
+        </div>
+        <div class="text_four">
+          <div class="txt1">Strawberry Fresh</div>
+          <div class="txt2">
+            1 UNIT<i
+              class="fa-solid fa-star"
+              style="border: none; color: rgb(248, 194, 31)"
+            ></i
+            >4.5
+          </div>
+          <div class="txt3">$18.00</div>
+          <div class="txt4">
+            <i class="fa-solid fa-minus"></i> 1
+            <i class="fa-solid fa-plus" id=""></i>Add to Card<i
+              class="fa-solid fa-cart-plus"
+              style="border: none; color: rgb(248, 194, 31)"
+            ></i>
+          </div>
+        </div>
+      </div>
+      <!--close_four-->
+      <!--box_four-->
+      <div class="box_four">
+        <div class="card_four">
+          <div>
+            <i class="fa-regular fa-heart"></i>
+          </div>
+          <div class="imges_four">
+            <img src="/projectWeb3/imge/TProcdct/Fruits30.png" alt="" />
+          </div>
+        </div>
+        <div class="text_four">
+          <div class="txt1">Pineapple Fresh</div>
+          <div class="txt2">
+            1 UNIT<i
+              class="fa-solid fa-star"
+              style="border: none; color: rgb(248, 194, 31)"
+            ></i
+            >4.5
+          </div>
+          <div class="txt3">$18.00</div>
+          <div class="txt4">
+            <i class="fa-solid fa-minus"></i> 1
+            <i class="fa-solid fa-plus"></i>Add to Card<i
+              class="fa-solid fa-cart-plus"
+              style="border: none; color: rgb(248, 194, 31)"
+            ></i>
+          </div>
+        </div>
+      </div>
+      <!--close_four-->
+      <!--box_four-->
+      <div class="box_four">
+        <div class="card_four">
+          <div>
+            <i class="fa-regular fa-heart"></i>
+          </div>
+          <div class="imges_four">
+            <img src="/projectWeb3/imge/TProcdct/Fruits31.png" alt="" />
+          </div>
+        </div>
+        <div class="text_four">
+          <div class="txt1">Apple Fresh</div>
+          <div class="txt2">
+            1 UNIT<i
+              class="fa-solid fa-star"
+              style="border: none; color: rgb(248, 194, 31)"
+            ></i
+            >4.5
+          </div>
+          <div class="txt3">$18.00</div>
+          <div class="txt4">
+            <i class="fa-solid fa-minus"></i> 1
+            <i class="fa-solid fa-plus"></i>Add to Card<i
+              class="fa-solid fa-cart-plus"
+              style="border: none; color: rgb(248, 194, 31)"
+            ></i>
+          </div>
+        </div>
+      </div>
+      <!--close_four-->
+    </div>
+    <!--close_close_four-->
+    <!-- Fome Login -->
+    <div class="category_seven">
+      <div class="box_seven">
+        <div class="text_seve">
+          <div>Get <span id="spanseve">25%</span></div>
+          <div><span id="spanseve">Discount</span> on your</div>
+          <div>first purchase</div>
+          <p id="txtseven">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
+            placeat illo alias nulla fugiat? Excepturi nisi doloribus officiis
+            pariatur quo.
+          </p>
+        </div>
+        <div class="card_seven">
+          <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label"
+                >Email address</label
+              >
+              <input
+                type="email"
+                class="form-control"
+                id="exampleInputEmail1"
+                aria-describedby="emailHelp"
+              />
+              <div id="emailHelp" class="form-text">
+                We'll never share your email with anyone else.
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label"
+                >Password</label
+              >
+              <input
+                type="password"
+                class="form-control"
+                id="exampleInputPassword1"
+              />
+            </div>
+            <div class="mb-3 form-check">
+              <input
+                type="checkbox"
+                class="form-check-input"
+                id="exampleCheck1"
+              />
+              <label class="form-check-label" for="exampleCheck1"
+                >Check me out</label
+              >
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- Most popular products -->
+    <div class="text_sixe">
+      <h4>Most popular products</h4>
+      <div class="link_sixe">
+        <a href=""
+          >View All Categories → <i class="fa-solid fa-chevron-left"></i>
+          <i class="fa-solid fa-chevron-right"></i
+        ></a>
+      </div>
+    </div>
+    <!--category_four-->
+    <div class="category_four">
+      <!--box_four-->
+      <div class="box_four">
+        <div class="card_four">
+          <div>
+            <i class="fa-regular fa-heart"></i>
+          </div>
+          <div class="imges_four">
+            <img src="/projectWeb3/imge/TProcdct/Fruits27.png" alt="" />
+          </div>
+        </div>
+        <div class="text_four">
+          <div class="txt1">Banana Fresh</div>
+          <div class="txt2">
+            1 UNIT<i
+              class="fa-solid fa-star"
+              style="border: none; color: rgb(248, 194, 31)"
+            ></i
+            >4.5
+          </div>
+          <div class="txt3">$18.00</div>
+          <div class="txt4">
+            <i class="fa-solid fa-minus"></i> 1
+            <i class="fa-solid fa-plus"></i>Add to Card<i
+              class="fa-solid fa-cart-plus"
+              style="border: none; color: rgb(248, 194, 31)"
+            ></i>
+          </div>
+        </div>
+      </div>
+      <!--close_four-->
+      <!--box_four-->
+      <div class="box_four">
+        <div class="card_four">
+          <div>
+            <i class="fa-regular fa-heart"></i>
+          </div>
+          <div class="imges_four">
+            <img src="/projectWeb3/imge/TProcdct/Fruits28.png" alt="" />
+          </div>
+        </div>
+        <div class="text_four">
+          <div class="txt1">Orange Fresh</div>
+          <div class="txt2">
+            1 UNIT<i
+              class="fa-solid fa-star"
+              style="border: none; color: rgb(248, 194, 31)"
+            ></i
+            >4.5
+          </div>
+          <div class="txt3">$18.00</div>
+          <div class="txt4">
+            <i class="fa-solid fa-minus"></i> 1
+            <i class="fa-solid fa-plus"></i>Add to Card<i
+              class="fa-solid fa-cart-plus"
+              style="border: none; color: rgb(248, 194, 31)"
+            ></i>
+          </div>
+        </div>
+      </div>
+      <!--close_four-->
+      <!--box_four-->
+      <div class="box_four">
+        <div class="card_four">
+          <div>
+            <i class="fa-regular fa-heart"></i>
+          </div>
+          <div class="imges_four">
+            <img src="/projectWeb3/imge/TProcdct//Fruits29.png" alt="" />
+          </div>
+        </div>
+        <div class="text_four">
+          <div class="txt1">Strawberry Fresh</div>
+          <div class="txt2">
+            1 UNIT<i
+              class="fa-solid fa-star"
+              style="border: none; color: rgb(248, 194, 31)"
+            ></i
+            >4.5
+          </div>
+          <div class="txt3">$18.00</div>
+          <div class="txt4">
+            <i class="fa-solid fa-minus"></i> 1
+            <i class="fa-solid fa-plus" id=""></i>Add to Card<i
+              class="fa-solid fa-cart-plus"
+              style="border: none; color: rgb(248, 194, 31)"
+            ></i>
+          </div>
+        </div>
+      </div>
+      <!--close_four-->
+      <!--box_four-->
+      <div class="box_four">
+        <div class="card_four">
+          <div>
+            <i class="fa-regular fa-heart"></i>
+          </div>
+          <div class="imges_four">
+            <img src="/projectWeb3/imge/TProcdct/Fruits30.png" alt="" />
+          </div>
+        </div>
+        <div class="text_four">
+          <div class="txt1">Pineapple Fresh</div>
+          <div class="txt2">
+            1 UNIT<i
+              class="fa-solid fa-star"
+              style="border: none; color: rgb(248, 194, 31)"
+            ></i
+            >4.5
+          </div>
+          <div class="txt3">$18.00</div>
+          <div class="txt4">
+            <i class="fa-solid fa-minus"></i> 1
+            <i class="fa-solid fa-plus"></i>Add to Card<i
+              class="fa-solid fa-cart-plus"
+              style="border: none; color: rgb(248, 194, 31)"
+            ></i>
+          </div>
+        </div>
+      </div>
+      <!--close_four-->
+      <!--box_four-->
+      <div class="box_four">
+        <div class="card_four">
+          <div>
+            <i class="fa-regular fa-heart"></i>
+          </div>
+          <div class="imges_four">
+            <img src="/projectWeb3/imge/TProcdct/Fruits31.png" alt="" />
+          </div>
+        </div>
+        <div class="text_four">
+          <div class="txt1">Apple Fresh</div>
+          <div class="txt2">
+            1 UNIT<i
+              class="fa-solid fa-star"
+              style="border: none; color: rgb(248, 194, 31)"
+            ></i
+            >4.5
+          </div>
+          <div class="txt3">$18.00</div>
+          <div class="txt4">
+            <i class="fa-solid fa-minus"></i> 1
+            <i class="fa-solid fa-plus"></i>Add to Card<i
+              class="fa-solid fa-cart-plus"
+              style="border: none; color: rgb(248, 194, 31)"
+            ></i>
+          </div>
+        </div>
+      </div>
+      <!--close_four-->
+    </div>
+    <!-- Most popular products -->
+    <div class="text_sixe">
+      <h4>Just arrived</h4>
+      <div class="link_sixe">
+        <a href=""
+          >View All Categories → <i class="fa-solid fa-chevron-left"></i>
+          <i class="fa-solid fa-chevron-right"></i
+        ></a>
+      </div>
+    </div>
+    <!--category_four-->
+    <div class="category_four">
+      <!--box_four-->
+      <div class="box_four">
+        <div class="card_four">
+          <div>
+            <i class="fa-regular fa-heart"></i>
+          </div>
+          <div class="imges_four">
+            <img src="/projectWeb3/imge/TProcdct/Fruits20.png" alt="" />
+          </div>
+        </div>
+        <div class="text_four">
+          <div class="txt1">Banana Fresh</div>
+          <div class="txt2">
+            1 UNIT<i
+              class="fa-solid fa-star"
+              style="border: none; color: rgb(248, 194, 31)"
+            ></i
+            >4.5
+          </div>
+          <div class="txt3">$18.00</div>
+          <div class="txt4">
+            <i class="fa-solid fa-minus"></i> 1
+            <i class="fa-solid fa-plus"></i>Add to Card<i
+              class="fa-solid fa-cart-plus"
+              style="border: none; color: rgb(248, 194, 31)"
+            ></i>
+          </div>
+        </div>
+      </div>
+      <!--close_four-->
+      <!--box_four-->
+      <div class="box_four">
+        <div class="card_four">
+          <div>
+            <i class="fa-regular fa-heart"></i>
+          </div>
+          <div class="imges_four">
+            <img src="/projectWeb3/imge/TProcdct/Fruits21.png" alt="" />
+          </div>
+        </div>
+        <div class="text_four">
+          <div class="txt1">Orange Fresh</div>
+          <div class="txt2">
+            1 UNIT<i
+              class="fa-solid fa-star"
+              style="border: none; color: rgb(248, 194, 31)"
+            ></i
+            >4.5
+          </div>
+          <div class="txt3">$18.00</div>
+          <div class="txt4">
+            <i class="fa-solid fa-minus"></i> 1
+            <i class="fa-solid fa-plus"></i>Add to Card<i
+              class="fa-solid fa-cart-plus"
+              style="border: none; color: rgb(248, 194, 31)"
+            ></i>
+          </div>
+        </div>
+      </div>
+      <!--close_four-->
+      <!--box_four-->
+      <div class="box_four">
+        <div class="card_four">
+          <div>
+            <i class="fa-regular fa-heart"></i>
+          </div>
+          <div class="imges_four">
+            <img src="/projectWeb3/imge/TProcdct//Fruits22.png" alt="" />
+          </div>
+        </div>
+        <div class="text_four">
+          <div class="txt1">Strawberry Fresh</div>
+          <div class="txt2">
+            1 UNIT<i
+              class="fa-solid fa-star"
+              style="border: none; color: rgb(248, 194, 31)"
+            ></i
+            >4.5
+          </div>
+          <div class="txt3">$18.00</div>
+          <div class="txt4">
+            <i class="fa-solid fa-minus"></i> 1
+            <i class="fa-solid fa-plus" id=""></i>Add to Card<i
+              class="fa-solid fa-cart-plus"
+              style="border: none; color: rgb(248, 194, 31)"
+            ></i>
+          </div>
+        </div>
+      </div>
+      <!--close_four-->
+      <!--box_four-->
+      <div class="box_four">
+        <div class="card_four">
+          <div>
+            <i class="fa-regular fa-heart"></i>
+          </div>
+          <div class="imges_four">
+            <img src="/projectWeb3/imge/TProcdct/Fruits23.png" alt="" />
+          </div>
+        </div>
+        <div class="text_four">
+          <div class="txt1">Pineapple Fresh</div>
+          <div class="txt2">
+            1 UNIT<i
+              class="fa-solid fa-star"
+              style="border: none; color: rgb(248, 194, 31)"
+            ></i
+            >4.5
+          </div>
+          <div class="txt3">$18.00</div>
+          <div class="txt4">
+            <i class="fa-solid fa-minus"></i> 1
+            <i class="fa-solid fa-plus"></i>Add to Card<i
+              class="fa-solid fa-cart-plus"
+              style="border: none; color: rgb(248, 194, 31)"
+            ></i>
+          </div>
+        </div>
+      </div>
+      <!--close_four-->
+      <!--box_four-->
+      <div class="box_four">
+        <div class="card_four">
+          <div>
+            <i class="fa-regular fa-heart"></i>
+          </div>
+          <div class="imges_four">
+            <img src="/projectWeb3/imge/TProcdct/Fruits24.png" alt="" />
+          </div>
+        </div>
+        <div class="text_four">
+          <div class="txt1">Apple Fresh</div>
+          <div class="txt2">
+            1 UNIT<i
+              class="fa-solid fa-star"
+              style="border: none; color: rgb(248, 194, 31)"
+            ></i
+            >4.5
+          </div>
+          <div class="txt3">$18.00</div>
+          <div class="txt4">
+            <i class="fa-solid fa-minus"></i> 1
+            <i class="fa-solid fa-plus"></i>Add to Card<i
+              class="fa-solid fa-cart-plus"
+              style="border: none; color: rgb(248, 194, 31)"
+            ></i>
+          </div>
+        </div>
+      </div>
+      <!--close_four-->
+    </div>
+    <div class="text_sixe">
+      <h4>Our Recent Blog</h4>
+      <div class="link_sixe">
+        <a href=""
+          >View All Categories → <i class="fa-solid fa-chevron-left"></i>
+          <i class="fa-solid fa-chevron-right"></i
+        ></a>
+      </div>
+    </div>
+    <!-- category_eight -->
+    <div class="category_eight">
+      <div class="box_eight">
+        <div class="card_eight">
+          <div class="imge_eight">
+            <img src="/projectWeb3/imge/TProcdct/Fruits337.jpg" alt="" />
+          </div>
+          <div class="text_eights">
+            <span id="txteightone"
+              ><i class="fa-solid fa-gift" style="border: none"></i>22 Aug 2021
+              <i class="fa-solid fa-truck-fast" style="border: none"></i>Tips &
+              tricks</span
+            >
+            <div id="txteightwo">Top 10 casual look ideas</div>
+            <div id="txteightwo">to dress up your kids</div>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipi elit. Aliquet
+              eleifend viverra enim tincidunt donec quam. A in arcu, hendrerit
+              neque dolor morbi...
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="box_eight">
+        <div class="card_eight">
+          <div class="imge_eight">
+            <img src="/projectWeb3/imge/TProcdct/Fruits39.jpg" alt="" />
+          </div>
+          <div class="text_eights">
+            <span id="txteightone"
+              ><i class="fa-solid fa-gift" style="border: none"></i>22 Aug 2021
+              <i class="fa-solid fa-truck-fast" style="border: none"></i>Tips &
+              tricks</span
+            >
+            <div id="txteightwo">Latest trends of wearing</div>
+            <div id="txteightwo">street wears supremely</div>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipi elit. Aliquet
+              eleifend viverra enim tincidunt donec quam. A in arcu, hendrerit
+              neque dolor morbi...
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="box_eight">
+        <div class="card_eight">
+          <div class="imge_eight">
+            <img src="/projectWeb3/imge/TProcdct/Fruits38.jpg" alt="" />
+          </div>
+          <div class="text_eights">
+            <span id="txteightone"
+              ><i class="fa-solid fa-gift" style="border: none"></i>22 Aug 2021
+              <i class="fa-solid fa-truck-fast" style="border: none"></i>Tips &
+              tricks</span
+            >
+            <div id="txteightwo">10 Different Types of</div>
+            <div id="txteightwo">comfortable clothes ideas</div>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipi elit. Aliquet
+              eleifend viverra enim tincidunt donec quam. A in arcu, hendrerit
+              neque dolor morbi...
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- contact -->
+    <br /><br /><br /><br /><br />
+    <div class="category_ten">
+      <div class="box_ten">
+        <div class="card_ten">
+          <div class="imge_ten">
+            <img src="/projectWeb3/imge/3-min.png" alt="" />
+          </div>
+        </div>
+        <div class="text_ten">
+          <div>Shop faster with foodmart App</div>
+          <br />
+          <div id="textten">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti
+            expedita voluptatem necessitatibus deserunt corporis eligendi atque
+            laboriosam nam maiores et totam molestiae alias, exercitationem
+            autem praesentium mollitia assumenda similique animi?
+          </div>
+          <div class="app">
+            <img src="/projectWeb3/imge/appple.png" alt="" />
+            <img src="/projectWeb3/imge/apstor.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <br /><br /><br />
+    <br /><br />
+    <h3 class="h3ten">People are also looking for</h3>
+    <div class="txt_nevbar">
+      <a href="">Blue diamon almonds</a>
+      <a href="">Angie's Boomchickapop Corn</a>
+      <a href="">Salty kettle Corn</a>
+      <a href="">Chobani Greek Yogurt</a>
+      <a href="">Sweet Vanilla Yogurt</a><br />
+      <br />
+      <a href="">Foster Farms Takeout Crispy wings</a>
+      <a href="">Warrior Blend Organic</a>
+      <a href="">Chao Cheese Creamy</a>
+      <a href="">Chicken meatballs</a>
+      <a href="">Blue diamon almonds</a><br /><br />
+      <a href="">Angie's Boomchickapop Corn </a>
+      <a href="">Salty kettle Corn</a>
+      <a href="">Chobani Greek Yogurt</a>
+      <a href="">Sweet Vanilla Yogurt</a>
+      <a href="">Foster Farms Takeout Crispy wings</a>
+    </div>
+    <!--  Free delivery-->
+    <div class="deliverry">
+      <div class="card_delivery">
+        <div class="txt_delivery">
+          <p id="deliveryone">
+            <i
+              class="fa-solid fa-cart-shopping"
+              style="border: none; font-size: 20px"
+            ></i
+            >Free delivery
+          </p>
+          <p id="deliverytwo">
+            Lorem ipsum dolor sit amet, consectetur adipi elit.
+          </p>
+        </div>
+      </div>
+      <div class="card_delivery">
+        <div class="txt_delivery">
+          <p id="deliveryone">
+            <i
+              class="fa-brands fa-shopify"
+              style="border: none; font-size: 20px"
+            ></i>
+            100% secure
+          </p>
+          <p id="deliverytwo">
+            Lorem ipsum dolor sit amet, consectetur adipi elit.
+          </p>
+        </div>
+      </div>
+      <div class="card_delivery">
+        <div class="txt_delivery">
+          <p id="deliveryone">
+            <i
+              class="fa-solid fa-inbox"
+              style="border: none; font-size: 20px"
+            ></i
+            >Quality guarantee
+          </p>
+          <p id="deliverytwo">
+            Lorem ipsum dolor sit amet, consectetur adipi elit.
+          </p>
+        </div>
+      </div>
+      <div class="card_delivery">
+        <div class="txt_delivery">
+          <p id="deliveryone">
+            <i
+              class="fa-brands fa-github"
+              style="border: none; font-size: 20px"
+            ></i>
+            guaranteed save
+          </p>
+          <p id="deliverytwo">
+            Lorem ipsum dolor sit amet, consectetur adipi elit.
+          </p>
+        </div>
+      </div>
+      <div class="card_delivery">
+        <div class="txt_delivery">
+          <p id="deliveryone">
+            <i
+              class="fa-solid fa-gift"
+              style="border: none; font-size: 20px"
+            ></i>
+            Daily offers
+          </p>
+          <p id="deliverytwo">
+            Lorem ipsum dolor sit amet, consectetur adipi elit.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- footer -->
+    <div class="footer">
+      <!-- 1 -->
+      <div class="card_footer">
+        <div class="txt_footer">
+          <p id="footerone"><img src="/projectWeb3/imge/04.png" alt="" /></p>
+          <p id="footertwo"></p>
+          <div>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-telegram"></i>
+            <i class="fa-brands fa-tiktok"></i>
+            <i class="fa-brands fa-instagram"></i>
+          </div>
+        </div>
+      </div>
+      <!-- 2 -->
+      <div class="card_footer">
+        <div class="txt_footer">
+          <p id="footerone">Ultras</p>
+          <p id="footertwo">
+            <a href="">About us</a><br />
+            <a href="">Conditions</a> <br />
+            <a href="">Our Journals</a> <br />
+            <a href="">Careers</a> <br />
+            <a href="">Affiliate Programme</a> <br />
+            <a href="">Ultras Press</a> <br />
+          </p>
+        </div>
+      </div>
+      <!-- 3 -->
+      <div class="card_footer">
+        <div class="txt_footer">
+          <p id="footerone">Customer Service</p>
+          <p id="footertwo">
+            <a href="">FAQ</a><br />
+            <a href="">Contact</a> <br />
+            <a href="">Privacy Policy</a> <br />
+            <a href="">Returns & Refunds</a> <br />
+            <a href="">Cookie Guidelines</a> <br />
+            <a href="">Delivery Information</a> <br />
+          </p>
+        </div>
+      </div>
+      <!-- 4 -->
+      <div class="card_footer">
+        <div class="txt_footer">
+          <p id="footerone">Customer Service</p>
+          <p id="footertwo">
+            <a href="">FAQ</a><br />
+            <a href="">Contact</a> <br />
+            <a href="">Privacy Policy</a> <br />
+            <a href="">Returns & Refunds</a> <br />
+            <a href="">Cookie Guidelines</a> <br />
+            <a href="">Delivery Information</a> <br />
+          </p>
+        </div>
+      </div>
+      <!-- 5 -->
+      <div class="card_footer">
+        <div class="txt_footer">
+          <p id="footerone">Subscribe Us</p>
+          <p id="footertwo">
+            <a href=""
+              >Subscribe to our newsletter to get updates about our grand
+              offers.</a
+            ><br />
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class=""></div>
+  </body>
+</html>

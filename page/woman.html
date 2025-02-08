@@ -1,0 +1,108 @@
+ <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Card</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container mt-4">
+      <div
+        class="card"
+        style="
+          width: 18rem;
+          border-radius: 10px;
+          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        "
+      >
+        <div class="card-img-top text-center p-3">
+          <img
+            src="https://via.placeholder.com/150"
+            alt="Product Image"
+            class="img-fluid"
+            style="max-width: 150px"
+          />
+        </div>
+        <div class="card-body text-center">
+          <h5 class="card-title mb-2">Sunstar Fresh Melon Juice</h5>
+          <p class="text-muted mb-1">1 UNIT</p>
+          <div class="d-flex justify-content-center align-items-center mb-3">
+            <span class="text-warning me-1">★</span>
+            <span class="text-muted">4.5</span>
+          </div>
+          <h4 class="fw-bold mb-3">$18.00</h4>
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="input-group" style="width: 120px">
+              <button class="btn btn-outline-secondary btn-sm">-</button>
+              <input
+                type="text"
+                class="form-control form-control-sm text-center"
+                value="1"
+              />
+              <button class="btn btn-outline-secondary btn-sm">+</button>
+            </div>
+            <button class="btn btn-primary btn-sm">
+              <i class="bi bi-cart"></i> Add to Cart
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap Icons and JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-uO3SXJqBJeo3lTlbA8e6fwO6Auio8nCQzQoL2tVTGH7xOcTxmfewlIsh/7xzTWo5"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
+      integrity="sha384-Vn2Y6uh5bn2ze6rWoqbFj35t4vb3Tx2I2Ei8DbA8S66aKwhCCU1+AsT2y4mU2Xi7"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Card</title>
+    <link rel="stylesheet" href="/projectWeb3/CSS/stylewoman.css" />
+  </head>
+  <body>
+    <div class="product-card">
+      <div class="card-header">
+        <img
+          src="/projectWeb3/imge/drink17.jpg"
+          alt="Product"
+          class="product-image"
+        />
+        <button class="wishlist-btn">♡</button>
+      </div>
+      <div class="card-body">
+        <h3 class="product-title">Sunstar Fresh Melon Juice</h3>
+        <p class="product-unit">1 UNIT</p>
+        <div class="rating">
+          <span class="star">★</span>
+          <span class="rating-value">4.5</span>
+        </div>
+        <div class="product-price">$18.00</div>
+        <div class="card-footer">
+          <div class="quantity-selector">
+            <button class="quantity-btn">-</button>
+            <input type="text" class="quantity-input" value="1" />
+            <button class="quantity-btn">+</button>
+          </div>
+          <button class="add-to-cart-btn">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html> -->
